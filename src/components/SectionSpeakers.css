@@ -1,0 +1,95 @@
+/* SectionSpeakers.css - simple marquee for speakers */
+
+/* marquee container */
+.speakers-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* track contains two identical ULs that animate horizontally */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* speaker list - inline horizontal list */
+.speaker-list {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+/* each speaker item uses fixed 400px width like original */
+.speaker-item {
+  width: 300px;
+  flex: 0 0 300px; /* prevent shrinking/growing */
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+}
+
+/* speaker image */
+.speaker-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto 8px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* details */
+.speakerdetails { padding: 6px 0; }
+.speakerh4 { font-weight: 600; font-size: 14px; margin: 4px 0; }
+.speakerp { font-size: 12px; opacity: 0.9; margin: 0;white-space: normal;
+  word-break: break-word; }
+
+/* marquee animation keyframes: translateX to -50% (because content duplicated) */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* apply animation; duration provided inline from component style */
+.marquee-left {
+  animation-name: marquee-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+/* pause on hover / keyboard focus for accessibility */
+.speakers-marquee:hover .marquee-left,
+.speakers-marquee:focus-within .marquee-left {
+  animation-play-state: paused;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .speaker-item, .speaker-img {
+    width: 320px;
+    height: 320px;
+    flex: 0 0 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .speaker-item, .speaker-img {
+    width: 220px;
+    height: 220px;
+    flex: 0 0 220px;
+  }
+}
+
+/* reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left { animation: none; transform: none; }
+}

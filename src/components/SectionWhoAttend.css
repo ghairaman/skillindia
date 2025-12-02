@@ -1,0 +1,105 @@
+/* SectionWhoAttend.css - vertical marquee and layout tweaks */
+
+/* container basics kept minimal since your global CSS provides most layout */
+.marquee-h h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* vertical marquee wrapper: fixed-height viewport for the marquee content */
+.marquee-vertical-wrapper {
+  overflow: hidden;
+  height: 300px; /* adjust to control how many items are visible */
+  position: relative;
+}
+
+/* track holds two lists stacked vertically (for seamless loop) */
+.marquee-vertical-track {
+  display: block;
+  /* We'll animate translateY from 0 to -50% (because content duplicated) */
+}
+
+/* each list */
+.marquee-vertical-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* items */
+.marquee-vertical-item {
+  padding: 8px 0;
+  color: #fff;
+  line-height: 1.4;
+  font-size: 1rem;
+  border-bottom: 0; /* remove if you have separators elsewhere */
+  background: transparent;
+}
+
+/* vertical animation keyframes - move up by 50% (half of the combined duplicated content) */
+@keyframes marquee-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* apply animation to track. Duration can be changed to speed/slow the scroll */
+.marquee-vertical-track {
+  animation-name: marquee-up;
+  animation-duration: 22s;      /* tweak: lower = faster */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+/* pause on hover/focus for accessibility */
+.marquee-vertical-wrapper:hover .marquee-vertical-track,
+.marquee-vertical-wrapper:focus-within .marquee-vertical-track {
+  animation-play-state: paused;
+}
+
+/* reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-vertical-track {
+    animation: none;
+  }
+}
+
+/* Responsive tweak: reduce marquee height on small screens */
+@media (max-width: 768px) {
+  .marquee-vertical-wrapper {
+    height: 200px; /* show more vertical space on mobile if desired */
+  }
+  .marquee-vertical-item {
+    font-size: 0.95rem;
+  }
+}
+
+/* keep your existing jarallax image responsive (assuming global CSS handles .jarallax-img) */
+/* If needed, minor safety styling: */
+.jarallax-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+/* ensure overlay and gradient layers remain on top of the image */
+.gradient-edge-top,
+.gradient-edge-bottom,
+.sw-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+/* maintain z-index ordering to match original design */
+.jarallax .container.relative.z-4 {
+  position: relative;
+  z-index: 4;
+}

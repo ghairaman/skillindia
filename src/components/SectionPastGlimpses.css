@@ -1,0 +1,102 @@
+/* SectionPastGlimpses.css - vertical marquees for Past Glimpses */
+
+/* basic layout */
+.choose-one .sec-title_heading {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: inherit;
+  text-align: center;
+}
+
+/* marquee wrapper */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* the inner container that will animate up or down */
+.glimpmarquee {
+  display: block;
+  /* default animation parameters (duration overridden inline) */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+/* list styling */
+.glimps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* each li contains an image */
+.glimps-list li {
+  margin: 0;
+  padding: 6px 0;
+  display: block;
+  text-align: center;
+}
+
+/* images - make them responsive and cropped similarly to original look */
+.glimps-list img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* track height is controlled by column container (max-height). To keep images sized nicely, we can set a max-height per image */
+.counter-block_one .glimps-list img {
+  max-height: 250px;  /* tweak as needed so column fits in max-height */
+  width: auto;
+  max-width: 100%;
+}
+
+/* duplicate content means the combined height is 200% of a single list.
+   animation moves translateY from 0 -> -50% for 'up' and -50% -> 0 for 'down' */
+
+/* up direction animation (move content upward) */
+@keyframes glimps-up {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+/* down direction animation (move content downward) */
+@keyframes glimps-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+/* apply */
+.glimpmarquee.marquee-up {
+  animation-name: glimps-up;
+}
+
+.glimpmarquee.marquee-down {
+  animation-name: glimps-down;
+}
+
+/* pause on hover / focus */
+.counter-block_one:hover .glimpmarquee,
+.counter-block_one:focus-within .glimpmarquee {
+  animation-play-state: paused;
+}
+
+/* responsive tweaks */
+@media (max-width: 992px) {
+  .counter-block_one { flex: 0 0 50%; max-width: 50%; }
+  .counter-block_one .glimps-list img { max-height: 120px; }
+}
+
+@media (max-width: 576px) {
+  .counter-block_one { flex: 0 0 50%; max-width: 50%; }
+  .counter-block_one .glimps-list img { max-height: 100px; }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .glimpmarquee { animation: none !important; transform: none !important; }
+}

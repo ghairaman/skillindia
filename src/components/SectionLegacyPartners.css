@@ -1,0 +1,90 @@
+/* SectionLegacyPartners.css - horizontal continuous marquee for partner logos */
+
+.legacy-partners {
+  position: relative;
+  overflow: hidden;
+}
+
+/* container for marquee */
+.partners-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* the track contains two identical lists that animate left */
+.partners-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  /* default timing function; duration set inline from component */
+  animation-name: partners-marquee-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+/* lists contain inline items */
+.partners-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* each logo cell */
+.partner-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    min-width: 180px;
+    max-width: 180px;
+    flex: 0 0 auto;
+    border: 1px solid #ccc;
+    max-height: 100px;
+    object-fit: contain;
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* images responsive and centered */
+.partner-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    max-height: 100px;
+}
+
+/* keyframes: move left by 50% (because we duplicate content) */
+@keyframes partners-marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* pause on hover/focus for accessibility */
+.partners-marquee:hover .partners-track,
+.partners-marquee:focus-within .partners-track {
+  animation-play-state: paused;
+}
+
+/* small screens: show fewer logos and reduce sizes */
+@media (max-width: 992px) {
+  .partner-item { min-width: 140px; max-width: 180px; }
+  .partners-marquee { margin-bottom: 1.25rem; }
+}
+
+@media (max-width: 576px) {
+  .partner-item { min-width: 110px; max-width: 140px; }
+}
+
+/* support reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .partners-track { animation: none !important; transform: none !important; }
+}

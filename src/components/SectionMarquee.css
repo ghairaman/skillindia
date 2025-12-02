@@ -1,0 +1,106 @@
+/* SectionMarquee.css - marquee styles (drop into src and import) */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* the track contains two identical lists that scroll horizontally */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  /* animation applied to .marquee-left / .marquee-right classes below */
+}
+
+/* list holds inline items */
+.marquee-list {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* each item (image or count block) */
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* image style - adapts to your design */
+.marquee-img {
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* counter block */
+.counter-block {
+  color: #fff;
+  text-align: center;
+  padding: 6px 12px;
+}
+.counter-block h4 {
+  margin: 6px 0 0;
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+/* animation: move left */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* because content duplicated */
+}
+
+/* animation: move right */
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* apply animation and make it linear infinite */
+/* default duration will be overwritten inline via style prop set in component */
+.marquee-left {
+  animation-name: marquee-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.marquee-right {
+  animation-name: marquee-right;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  /* flip track direction so it appears moving right */
+}
+
+/* pause on hover */
+.marquee:hover .marquee-left,
+.marquee:hover .marquee-right,
+.marquee:focus-within .marquee-left,
+.marquee:focus-within .marquee-right {
+  animation-play-state: paused;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .marquee-img {
+    width: 120px;
+    height: 80px;
+  }
+  .counter-block h4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left, .marquee-right {
+    animation: none;
+  }
+}

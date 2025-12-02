@@ -1,13 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>skill</title>
-  </head>
-  <body>
+<head>
+    <title>HR events in Delhi, Top Networking Events in delhi, Education Events and Conferences india, CXO events in india</title>
+    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Discover best hr events in india, Learning and Development Conferences india, L&D networking events in delhi, hr conferences in india at ObserveNow" name="description" >
+    <meta content="Skill India Leadership Summit 2026" name="keywords" >
+    <meta content="" name="author" > 
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="icon" type="image/png" href="https://observenow.com/assets/imgs/observenow-logo-icon-32.png">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="/css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="/css/style.css" rel="stylesheet" type="text/css" >
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="/css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-scheme">
+  <div id="wrapper">
     <div id="root"></div>
+  </div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/js/vendors.js"></script>
+    <script src="/js/designesia.js"></script>
+    <script src="/js/countdown-custom.js"></script>
+    <script src="/js/custom-marquee.js"></script>
+    <script src="/js/jquery.marquee.min.js"></script>
+    <script>
+  const targetDate = new Date("February 13, 2026 00:00:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.getElementById("countdown").innerHTML = "Event Started!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    function box(label, value) {
+      return `
+        <div class="innerdivcount">
+          <table>
+            <tr><td class="innerdivcounttd1">${label}</td></tr>
+            <tr><td class="innerdivcounttd2">${value}</td></tr>
+          </table>
+          
+        </div>
+      `;
+    }
+
+    document.getElementById("countdown").innerHTML =
+      box("Days", days) +
+      box("Hours", hours) +
+      box("Minutes", mins) +
+      box("Seconds", secs);
+
+  }, 1000);
+</script>
+
+</body>
+
 </html>

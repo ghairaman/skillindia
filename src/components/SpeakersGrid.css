@@ -1,0 +1,37 @@
+/* SpeakersGrid.css - small styles to match your original look */
+
+.imgspeaker {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 12px;
+}
+
+.speakerh3 {
+  font-size: 1rem;
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.speakerp {
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.75);
+  margin: 0;
+  line-height: 1.25;
+  white-space: normal;
+  text-align: center;
+}
+
+/* responsive tweaks */
+@media (max-width: 992px) {
+  .imgspeaker { max-height: 260px; }
+}
+
+@media (max-width: 576px) {
+  .imgspeaker { max-height: 200px; }
+  .speakerh3 { font-size: 0.95rem; }
+  .speakerp { font-size: 0.85rem; }
+}

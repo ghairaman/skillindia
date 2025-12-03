@@ -83,27 +83,7 @@ export default function SectionTestimonials({
                   Your browser does not support the video tag.
                 </video>
 
-                <button
-                  type="button"
-                  className="mutebutton"
-                  onClick={toggleMute}
-                  aria-pressed={!muted}
-                  aria-label={muted ? 'Unmute testimonial video' : 'Mute testimonial video'}
-                  style={{
-                    position: 'absolute',
-                    right: 16,
-                    bottom: 16,
-                    background: 'rgba(0,0,0,0.6)',
-                    color: '#fff',
-                    border: 'none',
-                    padding: '8px 10px',
-                    borderRadius: 6,
-                    cursor: 'pointer',
-                    fontSize: 18,
-                  }}
-                >
-                  {muted ? '🔇' : '🔊'}
-                </button>
+                
               </div>
             </div>
           </div>

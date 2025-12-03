@@ -1,0 +1,305 @@
+[
+  {
+    "speakerimage": "tanya-tikko.png",
+    "name": "Taniya Tikoo",
+    "designation": "Co-founder & Editor in Chief,\nObserveNow Media"
+  },
+  {
+    "speakerimage": "thangam-meghnathan.png",
+    "name": "Smt. Thangam Meganathan",
+    "designation": "Co founder Chairperson,\nRajalakshmi Institutions, Chennai"
+  },
+  {
+    "speakerimage": "sudhakar-rao.png",
+    "name": "Sudhakar Rao",
+    "designation": "Director,\nICFAI Group"
+  },
+  {
+    "speakerimage": "kartikeya-anand.png",
+    "name": "Mr. Kartikeya A",
+    "designation": "Head - Investment Promotion, & VP, Education & Skill, Renewable Energy APEDB,\nGovernment of Andhra Pradesh"
+  },
+  {
+    "speakerimage": "vishal-khurma.png",
+    "name": "Vishal Khurma",
+    "designation": "CEO,\nWoxsen University"
+  },
+  {
+    "speakerimage": "girish-j.png",
+    "name": "Dr. Girish J",
+    "designation": "Chairman, Governing Council, Director Education,\nGMR Institute of Technology, GMR Foundation"
+  },
+  {
+    "speakerimage": "rajat-gupta.png",
+    "name": "Prof. Dr. Rajat Gupta",
+    "designation": "Vice Chancellor,\nVel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology"
+  },
+  {
+    "speakerimage": "kuldeep-Kumar-raina.png",
+    "name": "Dr. Kuldeep Kumar Raina",
+    "designation": "Vice Chancellor,\nMS Ramaiah University of Applied Sciences"
+  },
+  {
+    "speakerimage": "archana-mantri.png",
+    "name": "Dr. Archana Mantri",
+    "designation": "Vice Chancellor,\nAnurag University, Telangana"
+  },
+  {
+    "speakerimage": "bssatyanarayana.png",
+    "name": "Prof B. S. Satyanarayana",
+    "designation": "Vice Chancellor,\nDayananda Sagar University"
+  },
+  {
+    "speakerimage": "ks-jagannatha-rao.png",
+    "name": "Dr. K.S. Jagannatha Rao",
+    "designation": "Pro Chancellor,\nKL Deemed to be University"
+  },
+  {
+    "speakerimage": "kali-prasad.png",
+    "name": "Kali Prasad Gadiraju",
+    "designation": "Chairman,\nEThames Business School, Hyderabad, Telangana"
+  },
+  {
+    "speakerimage": "hssaini.png",
+    "name": "Dr. H. S. Saini",
+    "designation": "Managing Director & Chairman,\nGuru Nanak Institutions, Hyderabad"
+  },
+  {
+    "speakerimage": "bj-rao.png",
+    "name": "Prof. B.J. Rao",
+    "designation": "Vice-Chancellor,\nThe University of Hyderabad, Hyderabad, Telangana"
+  },
+  {
+    "speakerimage": "abhijit-rao.png",
+    "name": "Abhijit Rao Katikaneni",
+    "designation": "President,\nSreenidhi Educational Group"
+  },
+  {
+    "speakerimage": "a-govardhan.png",
+    "name": "Prof. A. Govardhan",
+    "designation": "Vice Chancellor,\nRajiv Gandhi University of Knowledge Technologies - Basar"
+  },
+  {
+    "speakerimage": "kanwar-tushar-punj.png",
+    "name": "Er. Kanwar Tushar Punj",
+    "designation": "Pro Chancellor,\nSri Sai University"
+  },
+  {
+    "speakerimage": "vs-ready.png",
+    "name": "Dr.VSK Reddy",
+    "designation": "Vice-Chancellor,\nMalla Reddy University"
+  },
+  {
+    "speakerimage": "balakrishna.png",
+    "name": "Dr. Balakrishna P. Shetty",
+    "designation": "Vice-Chancellor,\nMalla Reddy Vishwavidyapeeth (Deemed University)"
+  },
+  {
+    "speakerimage": "gn-srinivas.png",
+    "name": "Prof. G. N. Srinivas",
+    "designation": "Vice - Chancellor,\nPalamuru University"
+  },
+  {
+    "speakerimage": "k-b-lingegowda.png",
+    "name": "Dr. K.B. Lingegowda",
+    "designation": "Vice-Chancellor,\nSri Siddhartha Academy of Higher Education"
+  },
+  {
+    "speakerimage": "praveen-rao.png",
+    "name": "PRAVEEN RAO VELCHALA",
+    "designation": "VICE CHANCELLOR,\nKAVERI UNIVERSITY"
+  },
+  {
+    "speakerimage": "geetalaxmi.png",
+    "name": "DR. S GEETHALAKSHMI",
+    "designation": "VICE-CHANCELLOR,\nDR. MGR EDUCATIONAL & RESEARCH INSTITUTE"
+  },
+  {
+    "speakerimage": "prof-ali.png",
+    "name": "Prof. Ali Raza Moosvi",
+    "designation": "Vice Chancellor,\nKhaja Bandanawaz University"
+  },
+  {
+    "speakerimage": "sivaperumail-sampath.png",
+    "name": "Sivaperumal Sampath",
+    "designation": "Pro-Vice Chancellor,\nPresidency University Bangalore"
+  },
+  {
+    "speakerimage": "Elijah_Blessing.png",
+    "name": "Elijah Blessing Rajsingh",
+    "designation": "Pro Vice Chancellor,\nKarunya Institute of Technology and Sciences"
+	
+  },
+  {
+    "speakerimage": "rajshekhar.png",
+    "name": "Dr. Rajashekhar Biradar",
+    "designation": "Pro Vice Chancellor,\nReva University"
+  },
+  {
+    "speakerimage": "anand-deshpande.png",
+    "name": "Prof. Anand S. Deshpande",
+    "designation": "Vice Chancellor,\nBagalkot University"
+  },
+  {
+    "speakerimage": "Saibaba_Reddy.png",
+    "name": "Prof Saibaba Reddy Eadala",
+    "designation": "Vice Chancellor,\nAnnamacharya University"
+  },
+  {
+    "speakerimage": "Raamji_Koona.png",
+    "name": "Ramji Koona",
+    "designation": "Vice Chancellor,\nKrishna University"
+  },
+  {
+    "speakerimage": "atluri-santi-reddy.png",
+    "name": "Smt. Atluri Santhi Srinivas Reddy",
+    "designation": "Secretary,\nA.M.Reddy Memorial College of Engineering & Technology"
+  },
+  {
+    "speakerimage": "vijaya-bhaskar-raju-k.png",
+    "name": "Prof. K. Vijaya Bhaskar Raju",
+    "designation": "Pro Vice Chancellor,\nGodavari Global University, Rajahmundry"
+  },
+  {
+    "speakerimage": "sameer-khan.png",
+    "name": "Sameer Khan",
+    "designation": "Pro Vice Chancellor,\nSRM University Trichy"
+  },
+  {
+    "speakerimage": "venkatesh.png",
+    "name": "Dr R. Venkatesh Babu",
+    "designation": "Director,\nSRM Group of Institutions"
+  },
+  {
+    "speakerimage": "baharul-islam.png",
+    "name": "Prof K M Baharul Islam",
+    "designation": "Director,\nIMT, Hyderabad"
+  },
+  {
+    "speakerimage": "Prasada-rao.png",
+    "name": "Dr. YVSBSV.Prasade Rao",
+    "designation": "Director,\nVignana Bharathi Institute of technology"
+  },
+  {
+    "speakerimage": "soumyo-mukherji.png",
+    "name": "Prof. Soumyo Mukherji",
+    "designation": "Director,\nBits Pilani Hyderabad Campus"
+  },
+  {
+    "speakerimage": "nagajyothi-koripella.png",
+    "name": "Dr. Nagajyothi Koripella",
+    "designation": "Pro Vice Chancellor (Academics),\nB.E.S.T Innovation University"
+  },
+  {
+    "speakerimage": "abhirama-krishna.png",
+    "name": "Prof. S. Abhirama Krishna",
+    "designation": "Director General,\nBadruka Group of Institutions, Hyderabad, Telangana"
+  },
+  {
+    "speakerimage": "divya-nalla.png",
+    "name": "Dr. Divya Nalla",
+    "designation": "Director,\nNalla Malla Reddy Engineering College, Hyderabad, Telangana"
+  },
+  {
+    "speakerimage": "sreenivasa-murthy.png",
+    "name": "Prof. S Sreenivasa Murthy",
+    "designation": "Director,\nIPE India"
+  },
+  {
+    "speakerimage": "asit-barma.png",
+    "name": "DR. ASIT K BARMA",
+    "designation": "DIRECTOR,\nBHARATHIDASAN INSTITUTE OF MANAGEMENT"
+  },
+  {
+    "speakerimage": "bharat-bhushan.png",
+    "name": "Prof (Dr.) Bharat Bhushan Singh",
+    "designation": "Director,\nVignana Jyothi Institute of Management, Hyderabad"
+  },
+  {
+    "speakerimage": "rajnikanth.png",
+    "name": "Prof. Rajanikanth Aluvalu",
+    "designation": "Director,\nSymbiosis Institute of Technology, Hyderabad"
+  },
+  {
+    "speakerimage": "alfat.png",
+    "name": "DR. ALTAF HUSSAIN",
+    "designation": "DIRECTOR & CHAIRMAN,\nLORDS INSTITUTE OF ENGINEERING AND TECHNOLOGY & IICE, HYDERABAD"
+  },
+  {
+    "speakerimage": "dr-ambuj.png",
+    "name": "Prof Dr Ambuj Gupta",
+    "designation": "Director and Professor,\nSiva Sivani Institute of Management, Hyderabad"
+  },
+  {
+    "speakerimage": "anand.png",
+    "name": "Prof. Dr Anand Agrawal",
+    "designation": "Founding Director,\nMuthoot Business School"
+  },
+  {
+    "speakerimage": "lakhshman-kumar.png",
+    "name": "Lakshman Kumar (Dr.YLK)",
+    "designation": "Director,\nAshoka School of Business"
+  },
+  {
+    "speakerimage": "suresh-ds.png",
+    "name": "Dr. SURESH D. S",
+    "designation": "Director,\nCIT Group of Institutions"
+  },
+  {
+    "speakerimage": "k-hariharanath.png",
+    "name": "Dr. K Hariharanath",
+    "designation": "Director,\nSSN School of Management"
+  },
+  {
+    "speakerimage": "pallab-das.png",
+    "name": "Dr. Pallab Das",
+    "designation": "Founding Dean,\nCenturion University"
+  },
+  {
+    "speakerimage": "chandra-mohan-reddy.png",
+    "name": "Prof. G. Chandra Mohan Reddy",
+    "designation": "Director,\nMahatma Gandhi Institute of Technology"
+  },
+  {
+    "speakerimage": "DR-P-MURALIDHAR.png",
+    "name": "Dr. P. Muralidhar",
+    "designation": "Program Director,\nNICMAR, Hyderabad"
+  },
+  {
+    "speakerimage": "abhishek-18-8.png",
+    "name": "Abhishek Pratap Singh",
+    "designation": "Director - Products,\nPeopleLink Unified Communications"
+  },
+  {
+    "speakerimage": "adarsh.png",
+    "name": "Adarsh HM",
+    "designation": "Co-founder and CEO,\nElcarreira Technologies"
+  },
+  {
+    "speakerimage": "vijay-kulkarni.png",
+    "name": "Vijay Kulkarni",
+    "designation": "Chief Technology Officer,\nElcarreira Technologies"
+  },
+  {
+    "speakerimage": "omprakash.png",
+    "name": "Omprakash K",
+    "designation": "Key Account Director,\nARKANCE"
+  },
+  {
+    "speakerimage": "prashant-alagiya.png",
+    "name": "Prashant Alagiya",
+    "designation": "Edu Lead – South India & Sri Lanka, DME,\nAdobe"
+  },
+  {
+    "speakerimage": "ramana-telidevara.png",
+    "name": "Ramana Telidevara",
+    "designation": "Co-Founder & CEO,\nCodeTantra"
+  },
+  {
+    "speakerimage": "vnsrinivasa-rao.png",
+    "name": "V N Srinivasa Rao",
+    "designation": "AGM- Partner Ecosystem (South),\nYotta"
+  }
+  
+  
+]

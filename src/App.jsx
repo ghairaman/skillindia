@@ -15,6 +15,7 @@ import SectionTestimonials from './components/SectionTestimonials'
 import SectionContact from './components/SectionContact'
 import Footer from './components/Footer'
 import RegisterModal from './components/RegisterModal'
+import SpeakersGrid from './components/SpeakersGrid'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,10 @@ function App() {
       <SectionAbout onExpressClick={openReg} />
       <SectionMarquee />
       <SectionPartners />
+      <SpeakersGrid
+        jsonUrl="https://skillindia-oob0p.kinsta.page/speakers.json"
+        imgBase="/speakers/" // or use '' if JSON contains absolute URLs
+      />
       <SectionWhyAttend />
       <SectionWhoAttend />
       <SectionSpeakers speed={50} jsonPath="/speaker.json" />

@@ -38,3 +38,75 @@
 .read-the-docs {
   color: #888;
 }
+@media screen and (min-width: 600px) {
+.headerslidetext {
+    font-family: 'Carattere', cursive;
+    font-size: 65px;
+    font-weight: 400;
+    padding: 35px 0 0;
+}
+}
+.blink {
+    animation: color-blink 1s infinite;
+    
+}
+@keyframes color-blink {
+    0% {
+        color: #EE9E0C;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: #3A1E51;
+    }
+}
+.award-list {
+  list-style: none;
+  padding: 15px 0 0;
+  font-size: 14px;
+}
+
+.award-list li {
+  margin-bottom: 6px;
+}
+.accordion-section-title {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, rgba(21,12,40,1) 0%,rgba(24,32,79,1) 100%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height:50px;
+}
+.accordion-section-title {
+  color: #35404e;
+  width: 100%;
+  padding: 15px 0;
+  cursor: poInter;
+  font-family: var(--body-font);
+  width: 100%;
+  display: inline-block;
+  font-size: 17px;
+  transition: all linear 0.5s;
+  text-decoration: none;
+  font-weight: 600;
+  overflow: none;
+  border-bottom: solid 1px #dddddd;
+  text-align: left;
+  padding-left: 20px;
+}
+.accordion-section-content {
+    padding:10px 25px;
+    background: #0000004a;
+    text-align: left;
+  padding-left: 20px;
+}
+.accordion-section-title:before {
+    margin-right: 20px;
+}
+.lhbase {
+    line-height: 20px !important;
+    font-family: sans-serif !important;
+}

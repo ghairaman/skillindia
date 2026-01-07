@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const MENU_ITEMS = [
   { href: '#section-hero', label: 'Home' },
@@ -7,6 +8,10 @@ const MENU_ITEMS = [
   { href: '#section-who-attend', label: 'Who Should Attend' },
   { href: '#pastspeaker', label: 'Past Speakers' },
 
+  // ✅ Awards route
+  { href: '/awards', label: 'Awards' },
+
+  // ✅ Dropdown
   {
     label: 'Past Conferences',
     submenu: [
@@ -28,8 +33,10 @@ const MENU_ITEMS = [
 ]
 
 
+
 export default function SiteHeader({ onExpressClick }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
 
   function toggleMenu() {
     setMenuOpen(open => {
@@ -42,9 +49,18 @@ export default function SiteHeader({ onExpressClick }) {
   function handleNavClick(href) {
     setMenuOpen(false)
     document.body.style.overflow = ''
+
+    // ✅ Route navigation
+    if (href.startsWith('/')) {
+      navigate(href)
+      return
+    }
+
+    // ✅ Page section scroll
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+
 
   function handleScrollToTop(e) {
     e.preventDefault()

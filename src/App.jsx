@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+
 import SiteHeader from './components/SiteHeader'
 import SectionHero from './components/SectionHero'
 import SectionAbout from './components/SectionAbout'
@@ -17,9 +19,12 @@ import Footer from './components/Footer'
 import RegisterModal from './components/RegisterModal'
 import SpeakersGrid from './components/SpeakersGrid'
 
-function App() {
-  const [count, setCount] = useState(0)
-   const [isRegOpen, setIsRegOpen] = useState(false)
+// 👉 NEW
+import AwardsPage from './components/AwardsPage'
+
+/* ---------------- HOME PAGE ---------------- */
+function HomePage() {
+  const [isRegOpen, setIsRegOpen] = useState(false)
 
   function openReg() {
     setIsRegOpen(true)
@@ -27,6 +32,7 @@ function App() {
   function closeReg() {
     setIsRegOpen(false)
   }
+
   return (
     <>
       <SiteHeader onExpressClick={openReg} />
@@ -34,10 +40,12 @@ function App() {
       <SectionAbout onExpressClick={openReg} />
       <SectionMarquee />
       <SectionPartners />
+
       <SpeakersGrid
         jsonUrl="https://skillindia-oob0p.kinsta.page/speakers.json"
-        imgBase="/speakers/" // or use '' if JSON contains absolute URLs
+        imgBase="/speakers/"
       />
+
       <SectionWhyAttend />
       <SectionWhoAttend />
       <SectionSpeakers speed={50} jsonPath="/speaker.json" />
@@ -47,9 +55,18 @@ function App() {
       <SectionTestimonials />
       <SectionContact />
       <Footer />
+
       <RegisterModal isOpen={isRegOpen} onClose={closeReg} />
     </>
   )
 }
 
-export default App
+/* ---------------- APP ROUTES ---------------- */
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/awards" element={<AwardsPage />} />
+    </Routes>
+  )
+}

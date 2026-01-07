@@ -6,9 +6,27 @@ const MENU_ITEMS = [
   { href: '#section-why-attend', label: 'Why Attend' },
   { href: '#section-who-attend', label: 'Who Should Attend' },
   { href: '#pastspeaker', label: 'Past Speakers' },
-  { href: '#pastpartners', label: 'Past Partners' },
+
+  {
+    label: 'Past Conferences',
+    submenu: [
+      { label: '11th Edition', href: 'https://observenowevents.in/elca/hyderabad/index.html' },
+      { label: '10th Edition', href: 'https://observenowevents.in/elca/chandigarh/index.html' },
+      { label: '9th Edition', href: 'https://observenowevents.in/elca/delhi/index.html' },
+      { label: '8th Edition', href: 'https://observenowevents.in/elca/mumbai/' },
+      { label: '7th Edition', href: 'https://observenowevents.in/elca/7th-edition/' },
+      { label: '6th Edition', href: 'https://observenowevents.in/elca/6th-edition/' },
+      { label: '5th Edition', href: 'https://observenowevents.in/elca/dubai/' },
+      { label: '4th Edition', href: 'https://observenowevents.in/elca/4th-edition/' },
+      { label: '3rd Edition', href: 'https://observenowevents.in/elca/jaipur/' },
+      { label: '2nd Edition', href: 'https://observenowevents.in/elca/2nd-edition/' },
+      { label: '1st Edition', href: '#' },
+    ],
+  },
+
   { href: '#section-venue', label: 'Venue' },
 ]
+
 
 export default function SiteHeader({ onExpressClick }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -88,26 +106,42 @@ export default function SiteHeader({ onExpressClick }) {
 
                 <div className="de-flex-col">
                   <div className="de-flex-col header-col-mid">
-                    <ul
-                      id="mainmenu"
-                      className={menuOpen ? 'open' : ''}
-                      style={{ listStyle: 'none', margin: 0, padding: 0 }}
-                    >
-                      {MENU_ITEMS.map((item, idx) => (
-                        <li key={idx} style={{ display: 'inline-block', marginRight: 12 }}>
-                          <a
-                            className={`menu-item ${item.href === '#section-hero' ? 'active' : ''}`}
-                            href={item.href}
-                            onClick={(e) => {
-                              e.preventDefault()
-                              handleNavClick(item.href)
-                            }}
-                          >
-                            {item.label}
-                          </a>
-                        </li>
-                      ))}
+                    <ul id="mainmenu" className={menuOpen ? 'open' : ''}>
+                      {MENU_ITEMS.map((item, idx) => {
+                        if (item.submenu) {
+                          return (
+                            <li key={idx} className="has-submenu">
+                              <a className="menu-item">{item.label}</a>
+                              <ul className="submenu">
+                                {item.submenu.map((sub, sidx) => (
+                                  <li key={sidx}>
+                                    <a href={sub.href} target="_blank" rel="noopener noreferrer">
+                                      {sub.label}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </li>
+                          )
+                        }
+
+                        return (
+                          <li key={idx}>
+                            <a
+                              className="menu-item"
+                              href={item.href}
+                              onClick={(e) => {
+                                e.preventDefault()
+                                handleNavClick(item.href)
+                              }}
+                            >
+                              {item.label}
+                            </a>
+                          </li>
+                        )
+                      })}
                     </ul>
+
                   </div>
                 </div>
 
@@ -185,22 +219,47 @@ export default function SiteHeader({ onExpressClick }) {
                   ×
                 </button>
 
-                <ul style={{ listStyle: 'none', padding: 0, marginTop: 8 }}>
-                  {MENU_ITEMS.map((item, idx) => (
-                    <li key={idx} style={{ marginBottom: 12 }}>
-                      <a
-                        href={item.href}
-                        onClick={(e) => {
-                          e.preventDefault()
-                          handleNavClick(item.href)
-                        }}
-                        style={{ fontSize: 18, textDecoration: 'none' }}
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                <ul style={{ listStyle: 'none', padding: 0 }}>
+  {MENU_ITEMS.map((item, idx) => {
+    if (item.submenu) {
+      return (
+        <li key={idx} style={{ marginBottom: 16 }}>
+          <strong>{item.label}</strong>
+          <ul style={{ listStyle: 'none', paddingLeft: 12, marginTop: 8 }}>
+            {item.submenu.map((sub, sidx) => (
+              <li key={sidx} style={{ marginBottom: 8 }}>
+                <a
+                  href={sub.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none', fontSize: 16 }}
+                >
+                  {sub.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      )
+    }
+
+    return (
+      <li key={idx} style={{ marginBottom: 12 }}>
+        <a
+          href={item.href}
+          onClick={(e) => {
+            e.preventDefault()
+            handleNavClick(item.href)
+          }}
+          style={{ fontSize: 18, textDecoration: 'none' }}
+        >
+          {item.label}
+        </a>
+      </li>
+    )
+  })}
+</ul>
+
 
                 <div style={{ marginTop: 24 }}>
                   <button

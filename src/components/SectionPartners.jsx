@@ -2,6 +2,13 @@ import React from 'react'
 
 const PARTNERS = [
   {
+    role: 'Printing & Digitization Partner',
+    src: '/images/canon.jpeg',
+    style: { background: '#fff', padding: '24px 17px', border: '1px solid #f1f1f1', borderRadius: 7, width: '100%', boxShadow: 'rgba(0,0,0,0.1) 0px 4px 12px' },
+    alt: 'Canon',
+    colClass: 'col-lg-3',
+  },
+  {
     role: 'Associate Partner',
     src: '/images/epson.jpeg',
     style: { background: '#fff', padding: '45px 17px', border: '1px solid #f1f1f1', borderRadius: 7, width: '100%', boxShadow: 'rgba(0,0,0,0.1) 0px 4px 12px' },

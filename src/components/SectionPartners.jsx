@@ -17,9 +17,9 @@ const PARTNERS = [
   },
   {
     role: 'University Partner',
-    src: '/images/',
+    src: '/images/iem-uem-logo.jpg',
     style: { background: '#fff', padding: '27px 1px', border: '1px solid #f1f1f1', borderRadius: 7, width: '100%', boxShadow: 'rgba(0,0,0,0.1) 0px 4px 12px' },
-    alt: 'Epson',
+    alt: 'IEM UEM',
     colClass: 'col-lg-3',
   },
   {

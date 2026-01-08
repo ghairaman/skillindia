@@ -16,6 +16,13 @@ const PARTNERS = [
     colClass: 'col-lg-3',
   },
   {
+    role: 'University Partner',
+    src: '/images/',
+    style: { background: '#fff', padding: '27px 1px', border: '1px solid #f1f1f1', borderRadius: 7, width: '100%', boxShadow: 'rgba(0,0,0,0.1) 0px 4px 12px' },
+    alt: 'Epson',
+    colClass: 'col-lg-3',
+  },
+  {
     role: 'Gifting Partner',
     src: '/images/khaas.png',
     style: { background: '#fff', padding: '11px 22px', border: '1px solid #f1f1f1', borderRadius: 7, width: '85%', boxShadow: 'rgba(0,0,0,0.1) 0px 4px 12px' },

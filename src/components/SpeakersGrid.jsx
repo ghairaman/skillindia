@@ -19,45 +19,81 @@ export default function SpeakersGrid({
   const [error, setError] = useState(null)
   const HR_SPEAKERS = [
   {
-    speakerimage: "tanya-tikko.png",
-    name: "Taniya Tikoo",
-    designation: "Co-founder & Editor in Chief<br>ObserveNow Media",
+    "speakerimage": "tanya-tikko.png",
+    "name": "Taniya Tikoo",
+    "designation": "Co-founder & Editor in Chief<br>ObserveNow Media"
   },
   {
-    speakerimage: "abhishek-mishra.png",
-    name: "Abhishek Mishra",
-    designation: "DIRETOR HR SERVICES<br>Protiviti India",
+    "speakerimage": "praveen-purohit.png",
+    "name": "Praveen Purohit",
+    "designation": "CHRO<br>Vedanta Resources Limited"
   },
   {
-    speakerimage: "gaurav-uppal.png",
-    name: "Gaurav Uppal",
-    designation: "Corporate Vice President & Head HR Corporate Functions<br>Axis Max Life Insurance Company Limited",
+    "speakerimage": "nishant-kalra.png",
+    "name": "Nishant_Kalra",
+    "designation": "Group CHRO<br>JTEKT INDIA LTD."
   },
   {
-    speakerimage: "arvind-srivastava.png",
-    name: "Arvind Srivastava",
-    designation: "Akums Drugs & Pharmaceuticals Ltd<br>President-HR",
+    "speakerimage": "abhay-kapoor.png",
+    "name": "Abhay Kapoor",
+    "designation": "Group CHRO<br>Victura Technologies Private Ltd."
   },
   {
-    speakerimage: "praveen-purohit.png",
-    name: "Praveen Purohit",
-    designation: "CHRO<br>Vedanta Resources Limited",
+    "speakerimage": "kaushik-chakraborty.png",
+    "name": "Kaushik Chakraborty",
+    "designation": "CPO<br>Savills Property services"
   },
   {
-    speakerimage: "kaushik-chakraborty.png",
-    name: "Kaushik Chakraborty",
-    designation: "CPO<br>Savills Property services",
+    "speakerimage": "shikha-rastogi.png",
+    "name": "Shikha Rastogi",
+    "designation": "Bloom CE Technology<br>CHRO"
   },
   {
-    speakerimage: "pallavi-poddar.png",
-    name: "Pallavi Poddar",
-    designation: "Chief Human Resources Officer<br>Fenesta Windows",
+    "speakerimage": "gopalji-mehrotra.png",
+    "name": "Gopalji_Mehrotra",
+    "designation": "Chief Human Resources Officer<br>ACME Group"
   },
   {
-    speakerimage: "shikha-rastogi.png",
-    name: "Shikha Rastogi",
-    designation: "Bloom CE Technology<br>CHRO",
+    "speakerimage": "viekas-khokha.png",
+    "name": "Viekas Khokha",
+    "designation": "CHRO<br>Sharda Motor Industries Ltd"
   },
+  {
+    "speakerimage": "pallavi-poddar.png",
+    "name": "Pallavi Poddar",
+    "designation": "Chief Human Resources Officer<br>Fenesta Windows"
+  },
+  {
+    "speakerimage": "dev-jha.png",
+    "name": "Dev Jha",
+    "designation": "CHRO<br>India Glycols Limited"
+  },
+  {
+    "speakerimage": "arvind-srivastava.png",
+    "name": "Arvind Srivastava",
+    "designation": "Akums Drugs & Pharmaceuticals Ltd<br>President-HR"
+  },
+  {
+    "speakerimage": "gaurav-uppal.png",
+    "name": "Gaurav Uppal",
+    "designation": "Corporate Vice President & Head HR Corporate Functions<br>Axis Max Life Insurance Company Limited"
+  },
+  {
+    "speakerimage": "abhishek-mishra.png",
+    "name": "Abhishek Mishra",
+    "designation": "DIRETOR HR SERVICES<br>Protiviti India"
+  },
+  {
+    "speakerimage": "jayeeta-m-sarkar.png",
+    "name": "Jayeeta M Sarkar",
+    "designation": "Director - L&D<br>HCL Healthcare"
+  },
+  {
+    "speakerimage": "akshay-bahl.png",
+    "name": "Akshay Bahl",
+    "designation": "Head_of_Global HR<br>Shared Services Center Ericsson"
+  }
+  
 ];
 
   useEffect(() => {

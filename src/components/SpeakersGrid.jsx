@@ -150,6 +150,14 @@ export default function SpeakersGrid({
                 <p class="speakerp">CEO, Anuvadini AI<br />Chief Coordinating Officer<br />AICTE, Ministry of Education<br />Government of India</p>
               </div>
             </div>
+
+            <div class="col-lg-4 col-6 text-center mb-5">
+              <div class="mainhigher">
+                <img src="https://observenowevents.in/skill-india/hrspeakers/Rishikesh_Patankar-removebg-preview.png" class="imgspeaker" />
+                <h3 class="speakerh3">Rishikesh Patankar</h3>
+                <p class="speakerp">Vice President,<br />Government Programs,<br />Industry &amp; Academia Collaboration<br />NSDC</p>
+              </div>
+            </div>
         </div>
         <div className="spacer-single" />
         <div class="row g-4">
